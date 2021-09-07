@@ -60,5 +60,61 @@ body {
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
       rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+  }
+  ///////////////////////
+  &__image {
+    max-width: 256px;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  ///////////////////////
+  &__title {
+    color: $text-white-color;
+    @extend %avenir-800;
+    margin-bottom: 20px;
+  }
+  ///////////////////////
+  &__list {
+    color: $text-grey-color;
+    text-align: left;
+    display: inline-block;
+    @extend %avenir-400;
+    margin-bottom: 20px;
+    // background: rgb(252, 192, 192);
+  }
+  ///////////////////////
+  &__list-item {
+    margin-bottom: 8px;
+  }
+  ///////////////////////
+  &__price {
+    // background: rgb(252, 192, 192);
+    @extend %avenir-800;
+    font-size: 3em;
+    color: $text-white-color;
+    margin-bottom: 30px;
+  }
+  ///////////////////////
+  &__usd-sign {
+    font-size: 0.5em;
+  }
+  ///////////////////////
+  &__button {
+    color: $text-white-color;
+    @extend %avenir-800;
+    background: $button-grey-color;
+    padding: 16px 48px;
+    border-radius: 16px;
+  }
+  &__button:hover {
+    color: $text-white-color;
+  }
+  ///////////////////////
+  &__icon {
+    width: 16px;
+    vertical-align: top;
   }
 }
