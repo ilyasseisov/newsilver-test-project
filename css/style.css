@@ -64,23 +64,46 @@ body {
 }
 
 .cards {
-  max-width: 90%;
-  height: 500px;
+  max-width: 80%;
+  height: auto;
   margin: 0 auto;
   background: #fabcbc;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: (480px)[4];
+      grid-template-rows: repeat(4, 480px);
 }
 
 @media (min-width: 768px) {
   .cards {
     max-width: 80%;
     background: #bcfac9;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 480px 480px;
+        grid-template-rows: 480px 480px;
   }
 }
 
 @media (min-width: 1024px) {
   .cards {
     max-width: 1000px;
+    height: 520px;
     background: #fabcf0;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: 480px;
+        grid-template-rows: 480px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cards {
+    max-width: 1180px;
   }
 }
 

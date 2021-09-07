@@ -23,25 +23,34 @@ body {
 }
 
 .cards {
-  max-width: 90%;
-  height: 500px;
+  max-width: 80%;
+  height: auto;
   margin: 0 auto;
   background: rgb(250, 188, 188);
+  padding: 20px;
   //////////////////
-  // display: grid;
-  // gap: 20px;
+  display: grid;
+  gap: 20px;
+  //////////////////
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 480px);
   //////////////////
   @media ($md) {
     max-width: 80%;
     background: rgb(188, 250, 201);
-    // grid-template-columns: repeat(2, 1fr);
-    // grid-template-rows: 480px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 480px 480px;
   }
   @media ($lg) {
     max-width: 1000px;
+    height: 520px;
     background: rgb(250, 188, 240);
-    // grid-template-columns: repeat(4, 1fr);
-    // grid-template-rows: 480px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 480px;
+  }
+
+  @media ($xl) {
+    max-width: 1180px;
   }
 
   //////////////////
