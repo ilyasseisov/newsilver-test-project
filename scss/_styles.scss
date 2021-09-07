@@ -62,14 +62,33 @@ body {
       rgba(0, 0, 0, 0.22) 0px 10px 10px;
     text-align: center;
     padding: 20px 10px 40px 10px;
-    // padding-top: 20px;
-    // padding-bottom: 40px;
+    transition: all 0.3s ease;
+  }
+  &__single-card:hover {
+    cursor: pointer;
+    transform: translateY(-4px);
+    background: $card-active-color;
+    box-shadow: rgba(29, 38, 94, 0.45) 0px 14px 28px,
+      rgba(29, 38, 94, 0.4) 0px 10px 10px;
+    transition: all 0.3s ease;
+    ////////////////////////////
+    @media ($md) {
+      transform: translateY(-8px);
+    }
+    @media ($lg) {
+      transform: translateY(-20px);
+    }
+  }
+
+  &__single-card:hover &__image {
+    transform: scale(1.05);
   }
   ///////////////////////
   &__image {
     max-width: 120px;
     width: 50%;
     margin-bottom: 10px;
+    transition: all 0.5s ease 0.1s;
     @media ($md) {
       max-width: 160px;
       width: 40%;
@@ -117,13 +136,21 @@ body {
     background: $button-grey-color;
     padding: 16px 48px;
     border-radius: 16px;
+    display: inline-block;
+    transition: all 0.3s ease;
   }
   &__button:hover {
+    background: $button-hover-color;
     color: $text-white-color;
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   }
   ///////////////////////
   &__icon {
     width: 16px;
     vertical-align: top;
   }
+  ///////////////////////
+  ///////////////////////
+  ///////////////////////
 }

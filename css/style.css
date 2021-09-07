@@ -139,12 +139,46 @@ body {
           box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   text-align: center;
   padding: 20px 10px 40px 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.cards__single-card:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  background: #4b60f0;
+  -webkit-box-shadow: rgba(29, 38, 94, 0.45) 0px 14px 28px, rgba(29, 38, 94, 0.4) 0px 10px 10px;
+          box-shadow: rgba(29, 38, 94, 0.45) 0px 14px 28px, rgba(29, 38, 94, 0.4) 0px 10px 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .cards__single-card:hover {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards__single-card:hover {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+.cards__single-card:hover .cards__image {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .cards__image {
   max-width: 120px;
   width: 50%;
   margin-bottom: 10px;
+  -webkit-transition: all 0.5s ease 0.1s;
+  transition: all 0.5s ease 0.1s;
 }
 
 @media (min-width: 768px) {
@@ -192,10 +226,18 @@ body {
   background: #333344;
   padding: 16px 48px;
   border-radius: 16px;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .cards__button:hover {
+  background: #474757;
   color: #fff;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
 .cards__icon {
