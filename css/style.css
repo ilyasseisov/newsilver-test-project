@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(../assets/fonts/Avenir-400.otf);
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(../assets/fonts/Avenir-800.otf);
+  font-display: swap;
+  font-weight: 800;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+/*# sourceMappingURL=style.css.map */
