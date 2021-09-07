@@ -67,7 +67,7 @@ body {
   max-width: 80%;
   height: auto;
   margin: 0 auto;
-  background: #fabcbc;
+  margin-bottom: 60px;
   padding: 20px;
   display: -ms-grid;
   display: grid;
@@ -81,7 +81,6 @@ body {
 @media (min-width: 768px) {
   .cards {
     max-width: 80%;
-    background: #bcfac9;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: 480px 480px;
@@ -93,7 +92,6 @@ body {
   .cards {
     max-width: 1000px;
     height: 520px;
-    background: #fabcf0;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     -ms-grid-rows: 480px;
@@ -108,6 +106,9 @@ body {
 }
 
 .cards__single-card {
-  background: #f6f876;
+  background: #222233;
+  border-radius: 16px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 /*# sourceMappingURL=style.css.map */
