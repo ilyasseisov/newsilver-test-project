@@ -24,7 +24,7 @@ body {
 
 .cards {
   max-width: 80%;
-  height: auto;
+  // height: auto;
   margin: 0 auto;
   margin-bottom: 60px;
   // background: rgb(250, 188, 188);
@@ -34,20 +34,20 @@ body {
   gap: 20px;
   //////////////////
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(4, 480px);
+  grid-template-rows: repeat(4, auto);
   //////////////////
   @media ($md) {
     max-width: 80%;
     // background: rgb(188, 250, 201);
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 480px 480px;
+    grid-template-rows: auto auto;
   }
   @media ($lg) {
     max-width: 1000px;
     height: 520px;
     // background: rgb(250, 188, 240);
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 480px;
+    // grid-template-rows: auto;
   }
 
   @media ($xl) {
@@ -61,14 +61,23 @@ body {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
       rgba(0, 0, 0, 0.22) 0px 10px 10px;
     text-align: center;
-    padding: 10px;
-    padding-top: 20px;
+    padding: 20px 10px 40px 10px;
+    // padding-top: 20px;
+    // padding-bottom: 40px;
   }
   ///////////////////////
   &__image {
-    max-width: 256px;
+    max-width: 120px;
     width: 50%;
     margin-bottom: 10px;
+    @media ($md) {
+      max-width: 160px;
+      width: 40%;
+    }
+    @media ($lg) {
+      max-width: 256px;
+      width: 50%;
+    }
   }
   ///////////////////////
   &__title {

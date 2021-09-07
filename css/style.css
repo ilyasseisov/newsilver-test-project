@@ -95,7 +95,6 @@ body {
 
 .cards {
   max-width: 80%;
-  height: auto;
   margin: 0 auto;
   margin-bottom: 60px;
   padding: 20px;
@@ -104,8 +103,8 @@ body {
   gap: 20px;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
-  -ms-grid-rows: (480px)[4];
-      grid-template-rows: repeat(4, 480px);
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
 }
 
 @media (min-width: 768px) {
@@ -113,8 +112,8 @@ body {
     max-width: 80%;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: 480px 480px;
-        grid-template-rows: 480px 480px;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
   }
 }
 
@@ -124,8 +123,6 @@ body {
     height: 520px;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: 480px;
-        grid-template-rows: 480px;
   }
 }
 
@@ -141,14 +138,27 @@ body {
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   text-align: center;
-  padding: 10px;
-  padding-top: 20px;
+  padding: 20px 10px 40px 10px;
 }
 
 .cards__image {
-  max-width: 256px;
+  max-width: 120px;
   width: 50%;
   margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .cards__image {
+    max-width: 160px;
+    width: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards__image {
+    max-width: 256px;
+    width: 50%;
+  }
 }
 
 .cards__title {
