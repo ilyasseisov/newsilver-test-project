@@ -52,6 +52,7 @@ body {
 .title {
   text-align: center;
   margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 .title__heading {
@@ -63,12 +64,24 @@ body {
 }
 
 .cards {
-  width: 1000px;
+  max-width: 90%;
   height: 500px;
-  background: #fabcbc;
   margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
+  background: #fabcbc;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    max-width: 80%;
+    background: #bcfac9;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    max-width: 1000px;
+    background: #fabcf0;
+  }
 }
 
 .cards__single-card {

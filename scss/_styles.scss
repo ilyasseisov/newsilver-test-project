@@ -9,6 +9,7 @@ body {
 .title {
   text-align: center;
   margin-bottom: 100px;
+  margin-top: 100px;
   /////////////////////
   &__heading {
     @extend %avenir-800;
@@ -22,12 +23,27 @@ body {
 }
 
 .cards {
-  width: 1000px;
+  max-width: 90%;
   height: 500px;
-  background: rgb(250, 188, 188);
   margin: 0 auto;
+  background: rgb(250, 188, 188);
   //////////////////
-  display: grid;
+  // display: grid;
+  // gap: 20px;
+  //////////////////
+  @media ($md) {
+    max-width: 80%;
+    background: rgb(188, 250, 201);
+    // grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: 480px;
+  }
+  @media ($lg) {
+    max-width: 1000px;
+    background: rgb(250, 188, 240);
+    // grid-template-columns: repeat(4, 1fr);
+    // grid-template-rows: 480px;
+  }
+
   //////////////////
   &__single-card {
     background: rgb(246, 248, 118);
