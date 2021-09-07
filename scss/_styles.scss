@@ -1,1 +1,35 @@
 @import "variables";
+
+body {
+  background: $body-dark-color;
+  color: $text-blue-color;
+  @extend %avenir-400;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 100px;
+  /////////////////////
+  &__heading {
+    @extend %avenir-800;
+    margin-bottom: 10px;
+  }
+  /////////////////////
+  &__paragraph {
+    @extend %avenir-400;
+    color: $text-blue-2-color;
+  }
+}
+
+.cards {
+  width: 1000px;
+  height: 500px;
+  background: rgb(250, 188, 188);
+  margin: 0 auto;
+  //////////////////
+  display: grid;
+  //////////////////
+  &__single-card {
+    background: rgb(246, 248, 118);
+  }
+}

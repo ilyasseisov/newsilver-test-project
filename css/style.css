@@ -33,4 +33,45 @@ html {
 @-ms-viewport {
   width: device-width;
 }
+
+body, .title__paragraph {
+  font-family: "Avenir", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.title__heading {
+  font-family: "Avenir", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+
+body {
+  background: #222233;
+  color: #596fff;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.title__heading {
+  margin-bottom: 10px;
+}
+
+.title__paragraph {
+  color: #4b5bd1;
+}
+
+.cards {
+  width: 1000px;
+  height: 500px;
+  background: #fabcbc;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+}
+
+.cards__single-card {
+  background: #f6f876;
+}
 /*# sourceMappingURL=style.css.map */
